@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\CountryFlags\**" />
+    <EmbeddedResource Remove="Resources\CountryFlags\**" />
+    <None Remove="Resources\CountryFlags\**" />
+    <Page Remove="Resources\CountryFlags\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\404-flag.png" />
+    <None Remove="Resources\earth-icon.png" />
+    <None Remove="Resources\earth-random-country.png" />
+    <None Remove="Resources\icon-github.png" />
+    <None Remove="Resources\icon-info.png" />
+    <None Remove="Resources\icon-linkedin.png" />
+    <None Remove="Resources\rotating-earth.gif" />
+    <None Remove="Resources\surprise-box.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2592.51" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Syncfusion.SfProgressBar.WPF" Version="26.1.41" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\404-flag.png" />
+    <Resource Include="Resources\earth-icon.png" />
+    <Resource Include="Resources\earth-random-country.png" />
+    <Resource Include="Resources\icon-github.png" />
+    <Resource Include="Resources\icon-info.png" />
+    <Resource Include="Resources\icon-linkedin.png" />
+    <Resource Include="Resources\rotating-earth.gif" />
+    <Resource Include="Resources\surprise-box.png" />
+  </ItemGroup>
+
+</Project>
