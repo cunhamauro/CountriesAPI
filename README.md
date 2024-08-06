@@ -11,3 +11,7 @@
   Google Maps Integration: Includes functionality for embedding Google Maps to enhance location-based information.
   </li>
 </ul>
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
